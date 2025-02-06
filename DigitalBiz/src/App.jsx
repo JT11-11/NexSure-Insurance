@@ -6,7 +6,7 @@ import ProductCard from './components/HomePg/ProductCard';
 import QuickLink from './components/HomePg/QuickLink';
 import Testimonial from './components/HomePg/Testimonial';
 import ClaimsSection from './components/HomePg/Claims';
-import insuranceProductsData from './Data/InsuranceProductsData';
+import { insuranceProductsData } from './Data/InsuranceProductsData';
 import { useState } from 'react';
 
 const App = () => {
@@ -26,8 +26,6 @@ const App = () => {
             We believe that insurance is a source of empowerment. Enjoy life and celebrate it – and if
             anything unexpected happens, have the confidence that we've got your back.
           </p>
-          
-          {/* Insurance Tabs */}
           <div className="flex flex-wrap gap-2 mb-8">
             {Object.keys(insuranceProductsData).map((tabName) => (
               <InsuranceTab
@@ -39,8 +37,6 @@ const App = () => {
             ))}
           </div>
         </div>
-
-        {/* Product Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {insuranceProductsData[activeTab].map((product, index) => (
             <ProductCard
