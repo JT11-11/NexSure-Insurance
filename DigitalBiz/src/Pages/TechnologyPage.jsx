@@ -30,7 +30,7 @@ const TechnologyPage = () => {
                 <h3 className="text-xl font-bold mb-4">Need immediate protection?</h3>
                 <p className="text-gray-600 mb-6">Get instant coverage for your digital assets</p>
                 <Link 
-                  to="/" 
+                  to="/protectnow" 
                   className="inline-block bg-orange-500 hover:bg-orange-600 transition-colors text-white px-8 py-3 rounded-full font-medium"
                 >
                   Protect now

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from '../components/HomePg/Navbar';
 import { Shield, Check, Server, Lock } from 'lucide-react';
+import { Link } from 'react-router';
 
 const TechLearnMore = () => {
   const [activeTab, setActiveTab] = useState('benefits');
@@ -42,7 +43,7 @@ const TechLearnMore = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation className="w-full" />
       
-      <main className="flex-1 bg-gray-50">
+      <main className="flex-1 bg-gray-50 mt-15">
         <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white">
           <div className="max-w-7xl mx-auto px-4 py-16">
             <h1 className="text-4xl font-bold mb-4">Tech Insurance Solutions</h1>
@@ -136,9 +137,11 @@ const TechLearnMore = () => {
           <div className="mt-16 bg-orange-50 rounded-xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">Ready to protect your digital assets?</h2>
             <p className="text-gray-600 mb-8">Get started with our comprehensive tech insurance coverage today.</p>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
+            <Link
+            to="/protectnow"
+             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
               Get Protected Now
-            </button>
+            </Link>
           </div>
         </div>
       </main>
