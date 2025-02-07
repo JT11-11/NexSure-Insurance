@@ -83,7 +83,7 @@ const ContactUs = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation className="w-full" />
       
-      <main className="flex-1 bg-gray-50">
+      <main className="flex-1 bg-gray-50 mt-13">
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
